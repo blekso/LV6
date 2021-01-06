@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity implements RemoveClickListen
         if (TextUtils.isEmpty(cellName)) {
             Toast.makeText(this, "Please write item name!", Toast.LENGTH_SHORT).show();
         } else {
-            adapter.addNewCell(cellName, 0);
+            adapter.addNewCell(cellName, adapter.getItemCount());
         }
     }
 
